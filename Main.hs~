@@ -1,0 +1,9 @@
+module Main where
+
+main :: IO ()
+main = putStrLn "Hello, Haskell!"
+
+sumlist :: [Int] -> Int
+sumlist [] = 0
+sumlist (x:xs) = x + sum xs
+
